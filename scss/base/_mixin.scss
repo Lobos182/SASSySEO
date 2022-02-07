@@ -1,0 +1,17 @@
+@mixin encabezados ($tamano){
+    h1 {
+      font-size: $tamano;
+    }
+    h2 {
+      font-size: $tamano - 0.2;
+    }
+    h3 {
+      font-size: $tamano - 0.5;
+    }
+  }
+  @mixin textos {
+      p{
+          font-size: $tamano -0.5;
+      }
+      
+  }

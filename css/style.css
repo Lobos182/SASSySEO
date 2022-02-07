@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* Tipografias importadas */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,400;1,100&display=swap");
+/* Elimina los valores predeterminados de HTML*/
+* {
+  /* Margen */
+  margin: 0px;
+  /* Relleno */
+  padding: 0px;
+}
+
+/*color para el body*/
+body {
+  background-color: #b4b2b2;
+}
+
+html {
+  font-size: 30px;
+}
+
+h1, h2 {
+  font-family: "Bungee", cursive;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+/* diseño header*/
+.mi-header {
+  margin-bottom: 12%;
+}
+
+.mini-logo {
+  display: none;
+}
+
+/* Media query header*/
+@media screen and (max-width: 1280px) {
+  .gran-logo {
+    display: none;
+  }
+
+  .text-gran-logo {
+    display: none;
+  }
+
+  .mi-header a {
+    font-size: smaller;
+  }
+
+  .mini-logo {
+    display: block;
+    height: 100px;
+  }
+
+  .container {
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gran-logo {
+    display: none;
+  }
+
+  .text-gran-logo {
+    display: none;
+  }
+
+  .mi-header a {
+    font-size: smaller;
+  }
+
+  .mini-logo {
+    display: block;
+    height: 100px;
+  }
+
+  .container {
+    padding-top: 250px;
+  }
+}
+/*Inicio Footer*/
+.mi-pie {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.redes {
+  height: 40px;
+  width: 40px;
+}
+
+#qr {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.legal {
+  display: block;
+}
+
+.redes {
+  display: inline-block;
+}
+
+/*Boton Flotante configuración */
+.whatsapp {
+  position: fixed;
+  bottom: 40%;
+  right: 1%;
+  height: 100px;
+  width: 100px;
+}
+
+/* Media query boton flotante*/
+@media screen and (max-width: 700px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 40%;
+    right: 1%;
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .whatsapp {
+    display: none;
+  }
+}
+/*configuracion ingreso*/
+/*botones diseño*/
+.botones {
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.botones:hover {
+  border: 3px solid black;
+}
+
+.mi-ingreso {
+  font-size: 0.75rem;
+}
+
+/* configuración nosotros*/
+.mi-nosotros {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.img-historia {
+  float: right;
+  padding: 20px;
+  border-radius: 45px;
+}
+
+.row {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.mi-ingreso p {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-label, .form-check-label {
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.form-control-ing {
+  height: 45px;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.3);
+  color: #969fa4;
+}
+
+.form-control-ing {
+  border-radius: 3px;
+}
+
+/*botones diseño*/
+.botones {
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.botones:hover {
+  border: 3px solid black;
+}
+
+/* html productos */
+.card {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Media query productos*/
+@media screen and (max-width: 700px) {
+  .card-title {
+    font-size: 0.75rem;
+  }
+}
+.card-prod h5 {
+  color: red;
+}
+
+/* FIN html productos */
+/* Incio html Registro */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+.form-control {
+  height: 60px;
+  box-shadow: none;
+  color: #969fa4;
+}
+
+.form-control:focus {
+  border-color: #5cb85c;
+}
+
+.form-control,
+.btn {
+  border-radius: 3px;
+}
+
+.signup-form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.signup-form h2 {
+  color: #636363;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding: 1px;
+  border: 1px;
+}
+
+.signup-form h2:before,
+.signup-form h2:after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  margin: 0 auto;
+  background: #532a2a;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+
+.signup-form h2:before {
+  left: -18px;
+}
+
+.signup-form h2:after {
+  right: -18px;
+}
+
+.signup-form .hint-text {
+  color: #999;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.signup-form form {
+  color: #999;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background: #f2f3f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form input[type=checkbox] {
+  margin-top: 3px;
+}
+
+.signup-form .btn {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 140px;
+  outline: none !important;
+}
+
+.signup-form .row div:first-child {
+  padding-right: 10px;
+}
+
+.signup-form .row div:last-child {
+  padding-left: 10px;
+}
+
+.signup-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.signup-form a:hover {
+  text-decoration: none;
+}
+
+.signup-form form a {
+  color: #5cb85c;
+  text-decoration: none;
+}
+
+.signup-form form a:hover {
+  text-decoration: underline;
+}
+
+/* Media query registro*/
+@media screen and (max-width: 700px) {
+  .signup-form {
+    padding-top: 150px;
+  }
+
+  .text-muted {
+    display: none;
+  }
+}
+/* Fin html Registro */
+/*Boton Flotante configuración */
+.up {
+  position: fixed;
+  bottom: 28%;
+  right: 1%;
+}
+
+/*# sourceMappingURL=style.css.map */

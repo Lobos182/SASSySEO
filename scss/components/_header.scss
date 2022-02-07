@@ -1,0 +1,53 @@
+/* diseño header*/
+
+.mi-header{
+    margin-bottom: 12%;
+}
+.mini-logo{
+    display: none;
+}
+
+/* Media query header*/
+
+@media screen and (max-width: 1280px) {
+    .gran-logo{
+        display: none;
+    }
+    .text-gran-logo{
+        display: none;
+    }
+    .mi-header{
+        a{
+            font-size: smaller;
+        }
+    }
+    .mini-logo{
+        display: block;    
+        height: 100px;    
+    } 
+    .container{
+        padding-top: 150px;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+   .gran-logo{
+        display: none;
+    }
+    .text-gran-logo{
+        display: none;
+    }
+    .mi-header{
+        a{
+            font-size: smaller;
+        }
+    }
+    .mini-logo{
+        display: block;    
+        height: 100px; 
+           
+    }
+    .container{
+        padding-top: 250px;
+    }
+}

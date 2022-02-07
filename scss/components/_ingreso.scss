@@ -1,0 +1,9 @@
+/*configuracion ingreso*/
+@import '../base/extends';
+.mi-ingreso{
+    font-size: 0.75rem;    
+    }
+
+.botones{
+    @extend %botones;
+}

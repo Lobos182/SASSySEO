@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tag -->
+    <meta name="description"
+        content="Dalo es una empresa que realiza paginas web totalmente flexibles para cualquier
+    contenido, implementando todas las nuevas tecnologias, implementamos Bootstrap, html, CSS, SCSS, SEO, javaScript, etc.">
+    <!-- KW -->
+    <meta name="keywords" content="Desarrollo web , apps, fullstack, html, bootstrap, javaScript">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Multimedio/icono/icono.ico" type="image/x-icon">
+    <!-- Open graph -->
+    <meta property="og:title" content="DALO">
+    <meta property="og:site_name" content="DALO">
+    <meta property="og:url" content="https://dalo182.000webhostapp.com/">
+    <meta property="og:description"
+        content="Es una empresa que realiza páginas web totalmente flexibles para cualquier contenido">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dalo182.000webhostapp.com/Multimedio/aimage.jpg">
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>DALO desarrollos web e-commerce flexibles</title>
+</head>
+
+<body>
+    <!-- creación header va a ser el mismo en todas la paginas -->
+
+    <header class="mi-header" id="top">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Multimedio/logo.svg" class="align-middle gran-logo" alt="logo" width="250" height="">
+                    <img src="Multimedio/logo-mini.svg" class="align-middle mini-logo" alt="logomini">
+                    <!-- Texto del Logo -->
+                    <span class="text-uppercase font-weight-bold text-gran-logo">Company</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                        <a class="nav-link" href="registro.html">Registro</a>
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin header -->
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-8 mi-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Multimedio/ofertas/oferta1.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Multimedio/ofertas/oferta2.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Multimedio/ofertas/oferta3.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Multimedio/ofertas/oferta4.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Multimedio/ofertas/oferta5.svg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mi-ingreso" id="ingreso">
+                <form class="row g-1 needs-validation shadow p-3 mb-5 bg-white rounded">
+                    <p>Ingreso usuarios registrados</p>
+                    <div class="col-sm-12 col-md-12">
+                        <label for="validationCustom01" class="form-label">Usuario:</label>
+                        <input type="text" class="form-control-ing" id="validationCustom01"
+                            placeholder="Ingrese usuario" required="required">
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <label for="validationCustom01" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control-ing" id="validationCustom01"
+                            placeholder="Ingrese Contraseña" required="required">
+                    </div>
+                    <div class="col-sm-12  col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" for="invalidCheck" type="checkbox">
+                            <label class="form-check-label" id="invalidCheck">
+                                Recordar usuario
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <button class="btn btn-primary botones" type="submit">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row" id="nosotros">
+            <h1>Nosotros</h1>
+            <div class="col mi-nosotros">
+                <img src="Multimedio/historia.jpg" class="img-historia" alt="Historia">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores repudiandae, alias aspernatur
+                    porro modi pariatur. Corporis, ipsam! Velit, laborum? Asperiores et veritatis fugit tempora
+                    eaque sunt id optio eveniet sit!
+                    Ut quidem velit possimus eligendi maiores quam dignissimos aliquid similique fugiat, consequatur
+                    necessitatibus sunt consequuntur accusantium magnam? Magnam quasi sint magni aspernatur a
+                    molestias alias eaque tempore saepe laboriosam. Suscipit!
+                    Ipsum rem, asperiores adipisci error vero repellat doloribus nesciunt soluta pariatur itaque
+                    explicabo. Vel facilis asperiores dignissimos eum nobis ad fugit! Commodi deleniti officia modi,
+                    unde corrupti eius impedit esse.
+                    <img src="Multimedio/aimage.jpg" class="img-historia" alt="logo-empresa">
+                    Quam id iure ratione eius dolore inventore dolorum suscipit. Ex quam voluptate dignissimos
+                    reiciendis itaque, porro, quisquam nisi inventore dolores consequuntur exercitationem quo sit
+                    mollitia, perferendis aliquam odio quaerat. Ratione?
+                    Ipsa deserunt dolorum magnam tempore nostrum veniam dolor odit saepe suscipit? Voluptatum
+                    tempore molestias maiores eligendi, asperiores accusantium! Molestiae adipisci consequatur
+                    recusandae similique officia itaque unde corrupti illo id. Vero.
+                    Recusandae provident alias nobis iure temporibus corrupti delectus quo voluptate neque. Corporis
+                    maiores perferendis eum enim possimus non, atque eos ipsa quisquam asperiores, vitae quaerat
+                    voluptatum facilis optio voluptatibus! Tenetur?
+                    Unde assumenda illum laborum excepturi at dicta provident, nesciunt veritatis sed aliquam.
+                    Expedita corrupti mollitia sint molestias. Iste soluta sit rem labore dolorum. Ad laborum eos
+                    non quo eveniet architecto?
+                </p>
+
+            </div>
+            <div class="row" id="contacto">
+                <h2>Contacto</h2>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Name"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Lastname"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                        </span>
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                        </span>
+                        <input type="tel" class="form-control" placeholder="Telefono" aria-label="Phone"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                <path fill-rule="evenodd"
+                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                            </svg>
+                        </span>
+                        <textarea class="form-control" placeholder="Escriba el mensaje"
+                            aria-label="textarea"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary botones">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.498539529563!2d-68.87602866665927!3d-32.88329794056189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%20Department%2C%20Mendoza%20Province!5e0!3m2!1sen!2sar!4v1643000061774!5m2!1sen!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inicio Boton flotante Whatsapp -->
+    <section>
+        <div>
+            <a href="https://www.whatsapp.com/"><img src="Multimedio/redes-sociales/whatsapp.svg" alt="whatsapp"
+                    class="whatsapp"></a>
+        </div>
+    </section>
+    <!-- Fin Boton -->
+
+    <section>
+        <div>
+            <a href="#top" class="up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Incio Footer va a ser el mismo en todas la paginas -->
+    <footer class="container-fluid mi-pie">
+        <div class="row fixed navbar-expand-lg  bg-dark">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div>
+                    <h5>Soporte</h5>
+                    <!-- esta opcion va a estar siempre disponible para ir a contacto -->
+                    <div><a href="index.html#contacto">¿Necesitas ayuda?</a></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="redes">
+                    <h5>Seguinos</h5>
+                    <div><a href="https://facebook.com">
+                            <img src="Multimedio/redes-sociales/facebook.svg" alt="Facebook" id="redes">
+                        </a></div>
+                    <div><a href="https://instagram.com">
+                            <img src="Multimedio/redes-sociales/instagram.svg" alt="Instagram" id="redes">
+                        </a></div>
+                    <div><a href="https://twitter.com">
+                            <img src="Multimedio/redes-sociales/twitter.svg" alt="Twitter" id="redes">
+                        </a></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="legal">
+                    <h5>Legal</h5>
+                    <!-- aca estas dos opciones deberian ir a una pagina donde esten los terminos y la politica -->
+                    <div><a href="">Terminos de uso</a></div>
+                    <div><a href="">Politica de privacidad</a></div>
+                    <div>
+                        <h6>Data Fiscal</h6>
+                        <!-- aca va a ir el tema del link a la pagina de la afip  -->
+                        <a href="https://afip.gob.ar"><img src="Multimedio/redes-sociales/qr.svg" alt="Afip" id="qr">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>

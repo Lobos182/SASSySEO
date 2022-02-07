@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <!-- creación header va a ser el mismo en todas la paginas -->
+
+    <header class="mi-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Multimedio/logo.svg" class="align-middle gran-logo" alt="logo" width="250" height="">
+                    <img src="Multimedio/logo-mini.svg" class="align-middle mini-logo" alt="logomini">
+                    <!-- Texto del Logo -->
+                    <span class="text-uppercase font-weight-bold text-gran-logo">Company</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                        <a class="nav-link" href="registro.html">Registro</a>
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin header -->
+
+
+
+
+    <div class="signup-form">
+        <form action="index.html" method="post">
+            <h2>Registro</h2>
+            <p class="hint-text">Crea tu cuenta. Es gratis y solo toma un minuto.</p>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" name="Nombre" placeholder="Nombre" required="required">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="Apellido" placeholder="Apellido" required="required">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="contraseña" placeholder="Contraseña" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirma-contraseña" placeholder="Confirma Contraseña" required="required">
+            </div>
+            <div class="form-group">
+                <label class="form-check-label">
+                    <input type="checkbox" required="required"> He leído y acepto
+                    <a href="#">los términos y condiciones de uso</a> &amp;
+                    <a href="#">La politica de privacidad</a>
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Registrarse</button>
+            </div>
+        </form>
+        <div class="text-center">Ya tienes cuenta?
+            <a href="index.html#ingreso">Ingresa</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Inicio Boton flotante Whatsapp -->
+    <section>
+        <div>
+            <a href="https://www.whatsapp.com/"><img src="Multimedio/redes-sociales/whatsapp.svg" alt="whatsapp"
+                    class="whatsapp"></a>
+        </div>
+    </section>
+    <!-- Fin Boton -->
+    <!-- Incio Footer va a ser el mismo en todas la paginas -->
+    <footer class="container-fluid mi-pie">
+        <div class="row fixed navbar-expand-lg  bg-dark">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div>
+                    <h5>Soporte</h5>
+                    <!-- esta opcion va a estar siempre disponible para ir a contacto -->
+                    <div><a href="index.html#contacto">¿Necesitas ayuda?</a></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="redes">
+                    <h5>Seguinos</h5>
+                    <div><a href="https://facebook.com">
+                            <img src="Multimedio/redes-sociales/facebook.svg" alt="Facebook" id="redes">
+                        </a></div>
+                    <div><a href="https://instagram.com">
+                            <img src="Multimedio/redes-sociales/instagram.svg" alt="Instagram" id="redes">
+                        </a></div>
+                    <div><a href="https://twitter.com">
+                            <img src="Multimedio/redes-sociales/twitter.svg" alt="Twitter" id="redes">
+                        </a></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="legal">
+                    <h5>Legal</h5>
+                    <!-- aca estas dos opciones deberian ir a una pagina donde esten los terminos y la politica -->
+                    <div><a href="">Terminos de uso</a></div>
+                    <div><a href="">Politica de privacidad</a></div>
+                    <div>
+                        <h6>Data Fiscal</h6>
+                        <!-- aca va a ir el tema del link a la pagina de la afip  -->
+                        <a href="https://afip.gob.ar"><img src="Multimedio/redes-sociales/qr.svg" alt="Afip" id="qr">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
